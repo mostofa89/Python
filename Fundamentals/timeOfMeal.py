@@ -8,7 +8,7 @@ elif time > 11 and time < 14:
 elif time > 15 and time < 17:
   print("Snacks")
 
-elif time>18 and time < 21:
+elif time > 18 and time < 21:
   print("Dinner")
 
 elif time >= 0 and time <= 24:
