@@ -10,3 +10,10 @@ print("==================================================")
 
 for key, value in dict1.items():
     print(f"{key} : {value}") # printing key value pair
+
+
+for values in dict1.values():
+    print(values) # printing only values
+
+for keys in dict1.keys():
+    print(keys) # printing only keys
