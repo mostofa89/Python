@@ -1,6 +1,6 @@
 def binary_search(nums, key, start, end):
     mid = (start + end) // 2
-    if start >= end:
+    if start > end:
         return -1
     
     if nums[mid] == key:
@@ -16,4 +16,4 @@ def binary_search(nums, key, start, end):
 
 nums = [2, 3, 4, 6, 7, 10, 12, 15, 18, 19, 20]
 key = 20
-print(f"The value index of {key} is {binary_search(nums, key, 0, len(nums))}.")
+print(f"The value index of {key} is {binary_search(nums, key, 0, len(nums) - 1)}.")
