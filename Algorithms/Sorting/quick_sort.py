@@ -3,27 +3,23 @@ def quickSort(arr, low, high):
     pi = partition(arr, low, high)
     quickSort(arr, low, pi - 1)
     quickSort(arr, pi + 1, high)
-
-  return arr
+    return arr
 
 
 def partition(arr, low, high):
-  mid = low + ((high - low) // 2)
-  pivot = arr[mid]
+  pivot = arr[high]       # Correct pivot position for Lomuto
   i = low - 1
+
   for j in range(low, high):
     if arr[j] < pivot:
       i += 1
       swap(arr, i, j)
 
-  swap(arr, i + 1, high)
+  swap(arr, i + 1, high)  # Place pivot in the correct position
   return i + 1
 
-
 def swap(arr, i, j):
-  temp = arr[i]
-  arr[i] = arr[j]
-  arr[j] = temp
+  arr[i], arr[j] = arr[j], arr[i]
 
 
 if __name__ == "__main__":
