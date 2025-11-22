@@ -18,8 +18,10 @@ def partition(arr, low, high):
   swap(arr, i + 1, high)  # Place pivot in the correct position
   return i + 1
 
+
 def swap(arr, i, j):
   arr[i], arr[j] = arr[j], arr[i]
+
 
 
 if __name__ == "__main__":
