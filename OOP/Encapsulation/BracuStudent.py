@@ -65,8 +65,9 @@ Passengers On Board: {self.__passenger}""")
 
 
 
-st1 = BracuStudent("Afif", "Mirpur")
+
 print("1===========================")
+st1 = BracuStudent("Afif", "Mirpur")
 st2 = BracuStudent("Shanto", "Motijheel")
 st3 = BracuStudent("Taskin", "Mirpur")
 st1.show_details()
